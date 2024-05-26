@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    //colores del gradiente para el fondo principal (FP)
+    <color name="FP_grad_color1">#1877AD</color>
+    <color name="FP_grad_color2">#50A47C</color>
+
 </resources>
