@@ -1,30 +1,29 @@
 package valeriano.velasquez.notevread
 
-import valeriano.velasquez.notevread.R
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-
-class MainActivity : AppCompatActivity() {
+class NotesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_notes)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        val button = findViewById<Button>(R.id.buttonWelcome);
+        val notesButton = findViewById<ImageButton>(R.id.arrowBack)
 
-        button.setOnClickListener {
-            val intent = Intent(this@MainActivity, FeaturesActivity::class.java)
+        notesButton.setOnClickListener {
+            val intent = Intent(this, FeaturesActivity::class.java)
             startActivity(intent)
         }
     }

@@ -24,7 +24,7 @@
         />
 
     <Button
-        android:id="@+id/botonBienvenido"
+        android:id="@+id/buttonWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bienvenido"

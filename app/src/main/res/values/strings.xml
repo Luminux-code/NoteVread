@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">NoteVread</string>
+    <string name="notes">Notas</string>
+    <string name="library">Biblioteca Electrónica</string>
+    <string name="events">Eventos</string>
+    <string name="rounded_button_description">Botón redondeado con imagen</string>
+
+    //notes_activity
+    <string name="icon_arrow_back">Regresar hacia atras</string>
+    <string name="icon_add">Añadir</string>
 </resources>
