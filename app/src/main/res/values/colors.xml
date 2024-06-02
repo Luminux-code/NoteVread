@@ -8,4 +8,10 @@
     <color name="FP_grad_color1">#1877AD</color>
     <color name="FP_grad_color2">#50A47C</color>
 
+    //temps
+    <color name="yellow">#FFEB3B</color>
+    <color name="red">#F44336</color>
+    <color name="green">#8BC34A</color>
+    <color name="pink">#C995DF</color>
+
 </resources>

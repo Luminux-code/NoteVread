@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">NoteVread</string>
+    <string name="Welcome">Bienvenido</string>
     <string name="notes">Notas</string>
     <string name="library">Biblioteca Electrónica</string>
     <string name="events">Eventos</string>
@@ -8,4 +9,6 @@
     //notes_activity
     <string name="icon_arrow_back">Regresar hacia atras</string>
     <string name="icon_add">Añadir</string>
+    <string name="Title">Titulo</string>
+    <string name="Notes">Notas...</string>
 </resources>

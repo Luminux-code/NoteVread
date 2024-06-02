@@ -20,10 +20,17 @@ class NotesActivity : AppCompatActivity() {
             insets
         }
 
-        val notesButton = findViewById<ImageButton>(R.id.arrowBack)
+        val arrowBackButton = findViewById<ImageButton>(R.id.arrowBack)
 
-        notesButton.setOnClickListener {
+        arrowBackButton.setOnClickListener {
             val intent = Intent(this, FeaturesActivity::class.java)
+            startActivity(intent)
+        }
+
+        val addButton = findViewById<ImageButton>(R.id.add_note)
+
+        addButton.setOnClickListener {
+            val intent = Intent(this, RegisterNotesActivity::class.java)
             startActivity(intent)
         }
     }
