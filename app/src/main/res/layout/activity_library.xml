@@ -15,7 +15,6 @@
         android:background="@color/sky_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.08"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -40,12 +39,41 @@
     </FrameLayout>
 
     <ImageButton
-        android:id="@+id/uno"
+        android:id="@+id/readingNow"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/tres"
-        app:layout_constraintEnd_toStartOf="@+id/dos"
+        app:layout_constraintBottom_toTopOf="@+id/colectionsBooks"
+        app:layout_constraintEnd_toStartOf="@+id/forReading"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:src="@drawable/libro_notas"
+        android:scaleType="fitCenter"
+        app:layout_constraintWidth_percent="0.38"
+        app:layout_constraintHeight_percent="0.18"
+
+        android:background="@drawable/rounded_button"
+        android:contentDescription="@string/reading_now"
+        />
+    <TextView
+        android:id="@+id/textReadingNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reading_now"
+        app:layout_constraintBottom_toTopOf="@+id/colectionsBooks"
+        app:layout_constraintEnd_toEndOf="@+id/readingNow"
+        app:layout_constraintStart_toStartOf="@+id/readingNow"
+        app:layout_constraintTop_toBottomOf="@+id/readingNow"
+        app:layout_constraintVertical_bias="0.2"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/forReading"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/favoritesBooks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/readingNow"
         app:layout_constraintTop_toTopOf="parent"
 
         android:src="@drawable/libro_notas"
@@ -55,54 +83,27 @@
         app:layout_constraintVertical_bias="0.1"
 
         android:background="@drawable/rounded_button"
-        android:contentDescription="@string/rounded_button_description"
+        android:contentDescription="@string/for_reading"
         />
     <TextView
-        android:id="@+id/text1"
+        android:id="@+id/textForReading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/notes"
-        app:layout_constraintBottom_toTopOf="@+id/tres"
-        app:layout_constraintEnd_toEndOf="@+id/uno"
-        app:layout_constraintStart_toStartOf="@+id/uno"
-        app:layout_constraintTop_toBottomOf="@+id/uno"
-        app:layout_constraintVertical_bias="0.3" />
+        android:text="@string/for_reading"
+        app:layout_constraintBottom_toTopOf="@+id/favoritesBooks"
+        app:layout_constraintEnd_toEndOf="@+id/forReading"
+        app:layout_constraintStart_toStartOf="@+id/forReading"
+        app:layout_constraintTop_toBottomOf="@+id/forReading"
+        app:layout_constraintVertical_bias="0.2"
+        android:textStyle="bold"/>
     <ImageButton
-        android:id="@+id/dos"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/cuatro"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/uno"
-        app:layout_constraintTop_toTopOf="parent"
-
-        android:src="@drawable/libro_notas"
-        android:scaleType="fitCenter"
-        app:layout_constraintWidth_percent="0.38"
-        app:layout_constraintHeight_percent="0.18"
-        app:layout_constraintVertical_bias="0.1"
-
-        android:background="@drawable/rounded_button"
-        android:contentDescription="@string/rounded_button_description"
-        />
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/notes"
-        app:layout_constraintBottom_toTopOf="@+id/cuatro"
-        app:layout_constraintEnd_toEndOf="@+id/dos"
-        app:layout_constraintStart_toStartOf="@+id/dos"
-        app:layout_constraintTop_toBottomOf="@+id/dos"
-        app:layout_constraintVertical_bias="0.3" />
-    <ImageButton
-        android:id="@+id/tres"
+        android:id="@+id/colectionsBooks"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/cuatro"
+        app:layout_constraintEnd_toStartOf="@+id/favoritesBooks"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/uno"
+        app:layout_constraintTop_toBottomOf="@+id/readingNow"
 
         android:src="@drawable/libro_notas"
         android:scaleType="fitCenter"
@@ -111,26 +112,27 @@
         app:layout_constraintVertical_bias="0.1"
 
         android:background="@drawable/rounded_button"
-        android:contentDescription="@string/rounded_button_description"
+        android:contentDescription="@string/colections"
         />
     <TextView
-        android:id="@+id/text3"
+        android:id="@+id/textColeciontsBooks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/notes"
+        android:text="@string/colections"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tres"
-        app:layout_constraintStart_toStartOf="@+id/tres"
-        app:layout_constraintTop_toBottomOf="@+id/tres"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintEnd_toEndOf="@+id/colectionsBooks"
+        app:layout_constraintStart_toStartOf="@+id/colectionsBooks"
+        app:layout_constraintTop_toBottomOf="@+id/colectionsBooks"
+        app:layout_constraintVertical_bias="0.2"
+        android:textStyle="bold"/>
     <ImageButton
-        android:id="@+id/cuatro"
+        android:id="@+id/favoritesBooks"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tres"
-        app:layout_constraintTop_toBottomOf="@+id/dos"
+        app:layout_constraintStart_toEndOf="@+id/colectionsBooks"
+        app:layout_constraintTop_toBottomOf="@+id/forReading"
 
         android:src="@drawable/libro_notas"
         android:scaleType="fitCenter"
@@ -139,17 +141,18 @@
         app:layout_constraintVertical_bias="0.1"
 
         android:background="@drawable/rounded_button"
-        android:contentDescription="@string/rounded_button_description"
+        android:contentDescription="@string/favorites"
         />
     <TextView
-        android:id="@+id/text4"
+        android:id="@+id/textFavoritesBooks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/notes"
+        android:text="@string/favorites"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/cuatro"
-        app:layout_constraintStart_toStartOf="@+id/cuatro"
-        app:layout_constraintTop_toBottomOf="@+id/cuatro"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintEnd_toEndOf="@+id/favoritesBooks"
+        app:layout_constraintStart_toStartOf="@+id/favoritesBooks"
+        app:layout_constraintTop_toBottomOf="@+id/favoritesBooks"
+        app:layout_constraintVertical_bias="0.2"
+        android:textStyle="bold"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

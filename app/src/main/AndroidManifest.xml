@@ -13,15 +13,19 @@
         android:theme="@style/Theme.NoteVread"
         tools:targetApi="31">
         <activity
-            android:name=".RegisterEventsActivity"
+            android:name=".ColectionsActivity"
             android:exported="false" />
         <activity
-            android:name=".ScrollingActivity"
-            android:exported="false"
-            android:label="@string/title_activity_scrolling"
-            android:theme="@style/Theme.NoteVread.NoActionBar" />
+            android:name=".FavoritesActivity"
+            android:exported="false" />
         <activity
-            android:name=".basicActivity"
+            android:name=".ForReadingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReadingNowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterEventsActivity"
             android:exported="false" />
         <activity
             android:name=".RegisterNotesActivity"

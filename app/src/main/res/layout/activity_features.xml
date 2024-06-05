@@ -12,7 +12,7 @@
         android:id="@+id/notes"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/library"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -21,7 +21,6 @@
         android:scaleType="fitCenter"
         app:layout_constraintWidth_percent="0.38"
         app:layout_constraintHeight_percent="0.18"
-        app:layout_constraintVertical_bias="0.1"
 
         android:background="@drawable/rounded_button"
         android:contentDescription="@string/rounded_button_description"
@@ -35,19 +34,19 @@
         app:layout_constraintBottom_toTopOf="@+id/library"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintTop_toBottomOf="@+id/notes"
-        app:layout_constraintVertical_bias="0.3" />
+
+        app:layout_constraintVertical_bias="0.3"
+        android:textStyle="bold"/>
 
     <ImageButton
         android:id="@+id/library"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/events"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45"
+        app:layout_constraintTop_toBottomOf="@+id/notes"
 
         android:src="@drawable/imagen_libro"
         android:scaleType="fitCenter"
@@ -66,10 +65,11 @@
         android:text="@string/library"
         app:layout_constraintBottom_toTopOf="@+id/events"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/library"
-        app:layout_constraintVertical_bias="0.75" />
+        app:layout_constraintTop_toBottomOf="@+id/library"
+
+        app:layout_constraintVertical_bias="0.3"
+        android:textStyle="bold"/>
 
     <ImageButton
         android:id="@+id/events"
@@ -78,8 +78,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintTop_toBottomOf="@+id/library"
 
         android:src="@drawable/calendario"
         android:scaleType="fitCenter"
@@ -97,8 +96,8 @@
         android:text="@string/events"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/events"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.3"
+        android:textStyle="bold"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
